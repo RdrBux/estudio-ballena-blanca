@@ -4,8 +4,40 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Estudio Ballena Blanca | Mezclas y masterización ONLINE">
 	<main class="container mx-auto px-4 relative">
-		<section class="relative h-screen">
-			<div class="absolute top-10 left-1/2 h-[250px] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div>
+		<section class="relative h-screen grid place-content-center">
+			<div class="absolute top-20 left-1/2 h-[250px] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div>
+
+			<h1 class="text-8xl relative z-10 font-bold shadow-2xl text-center">LLEVAMOS TU <br> MÚSICA A UN <br> <span class="text-primary-200">NUEVO NIVEL</span></h1>
+		</section>
+
+		<section class="container mx-auto px-4">
+			<div class="rounded-lg bg-neutral-900 p-12 flex flex-col items-center">
+				<h2 class="font-bold text-7xl">SERVICIOS</h2>
+				<p class="max-w-lg text-center mt-4 text-lg">En Ballena Blanca nos especializamos en Mezcla de audio, Masterización y Producción Musical</p>
+
+				<div class="grid grid-cols-2 gap-8 mt-12">
+					<div class="bg-neutral-800 rounded-lg p-8">
+						<h3 class="font-bold text-3xl">Mezcla de audio</h3>
+						<p class="text-neutral-400 mt-4">Envía las pistas que hayas grabado en casa o en un estudio, y nosotros nos encargaremos de aplicar todos los procesos necesarios para que suenen al nivel competitivo del estándar de la industria. Esta etapa es altamente artística, es por eso muy importante mantener un intercambio constante con los artistas para asegurarnos de que tu canción llegue a donde quieres que esté.</p>
+					</div>
+
+					<div class="bg-neutral-800 rounded-lg p-8">
+						<h3 class="font-bold text-3xl">Mastering</h3>
+						<p class="text-neutral-400 mt-4">Después de completar una correcta mezcla, es importante asegurarse de que el audio de la canción esté en los niveles competitivos de la industria musical. Equilibrar y optimizar el audio para garantizar su compatibilidad con todos los sistemas y formatos de reproducción, asegurando una calidad impecable en cada plataforma.</p>
+					</div>
+
+					<div class="bg-neutral-800 rounded-lg p-8">
+						<h3 class="font-bold text-3xl">Producción musical</h3>
+						<p class="text-neutral-400 mt-4">Puedes confiar en nosotros para todos los procesos de preproducción. Ya sea que tengas una idea o una pieza sonora inicial, trabajamos en las partes, arreglos y armonización, así como en el diseño sonoro, para poder empezar la etapa de grabación, mezcla y masterización con toda seguridad y fluidez. Te acompañamos desde el concepto hasta la finalización del proyecto, asegurándonos de que tu visión se materialice plenamente.</p>
+					</div>
+
+					<div class="bg-neutral-800 rounded-lg p-8">
+						<h3 class="font-bold text-3xl">Catálogo de músicos de sesión</h3>
+						<p class="text-neutral-400 mt-4">Si eres músico solista o quieres agregar pistas con instrumentos reales grabados, contamos con una lista de músicos de sesión de primer nivel a tu disposición. Estos profesionales pueden enriquecer tus proyectos con su talento y experiencia, aportando un toque auténtico y profesional a tus grabaciones.</p>
+					</div>
+				</div>
+			</div>
+
 		</section>
 	</main>
 </Layout>
