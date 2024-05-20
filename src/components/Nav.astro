@@ -1,6 +1,13 @@
-	<nav class="relative flex justify-between items-center container mx-auto px-4 lg:px-8 py-6">
-		<a class="flex items-center gap-3" href="/">
-			<div class="w-10 aspect-square rounded-full bg-primary-200"></div>
+---
+import Logo from '../assets/logo.jpeg'
+
+let showMenu = false
+---
+
+<nav class="relative z-40 flex justify-between items-center container mx-auto px-4 lg:px-8 ---py-6 py-3">
+		<a class="flex items-center ---gap-3" href="/">
+			<!-- <div class="w-10 aspect-square rounded-full bg-primary-200"></div> -->
+			<img class="w-16 aspect-square" src={Logo.src} alt="">
 			<div>
 				<div class="text-xl font-semibold">Estudio Ballena Blanca</div>
 				<div class="uppercase text-xs tracking-wider text-primary-100">Mezclas y masterización ONLINE</div>
@@ -8,11 +15,38 @@
 		</a>
 
 		<ul class="hidden lg:flex text-neutral-400">
-			<li><a class="px-5 py-2 hover:text-white duration-500" href="#">Inicio</a></li>
 			<li><a class="px-5 py-2 hover:text-white duration-500" href="#servicios">Servicios</a></li>
 			<li><a class="px-5 py-2 hover:text-white duration-500" href="#trabajos">Nuestros Trabajos</a></li>
 			<li><a class="px-5 py-2 hover:text-white duration-500" href="#contacto">Contacto</a></li>
 		</ul>
 
+		<ul class="mobile-menu closed | fixed inset-0 flex text-4xl bg-black/75 backdrop-blur-md font-bold gap-4 -z-10 flex-col items-center justify-center lg:hidden text-neutral-400">
+			<li><a class="nav-link | px-5 py-2 hover:text-white duration-500" href="#servicios">Servicios</a></li>
+			<li><a class="nav-link | px-5 py-2 hover:text-white duration-500" href="#trabajos">Nuestros Trabajos</a></li>
+			<li><a class="nav-link | px-5 py-2 hover:text-white duration-500" href="#contacto">Contacto</a></li>
+		</ul>
+
+		<button class="hamburger | lg:hidden p-2 border border-neutral-700 rounded-lg" aria-label="Abrir Menú">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white/70">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+			</svg>
+		</button>
+
 		<div class="absolute h-[1px] bg-gradient-to-r from-black via-neutral-500 to-black bottom-0 left-0 right-0"></div>
 	</nav>
+
+	<style>
+		.closed {
+			display: none;
+		}
+	</style>
+
+	<script>
+		document.querySelector('.hamburger').addEventListener('click', () => {
+			document.querySelector('.mobile-menu').classList.toggle('closed')
+		})
+
+		document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => {
+			document.querySelector('.mobile-menu').classList.add('closed')
+		}))
+	</script>

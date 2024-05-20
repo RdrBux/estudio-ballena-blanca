@@ -8,17 +8,17 @@ import Nav from '../components/Nav.astro';
 		<div class="h-screen flex flex-col">
 			<Nav />
 			<section class="relative grow grid place-content-center container mx-auto px-4 lg:px-8">
-				<!-- <div class="blur absolute -z-10 top-12 left-1/2 h-[250px] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div> -->
-				<!-- <div class="absolute -z-10 top-10 left-1/2 h-[35%] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div> -->
+				<!-- <div class="blur-xl absolute -z-10 top-12 left-1/2 h-[180px] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div>
+				<div class="absolute -z-10 top-10 left-1/2 h-[180px] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div> -->
 
-				<h1 class="text-5xl lg:text-8xl font-bold text-center -mt-24 uppercase">Llevamos tu <br> música a un <br> <span class="bg-gradient-to-b from-primary-100 to-primary-300 text-transparent bg-clip-text">nuevo nivel</span></h1>
+				<h1 class="text-[12vw] leading-[110%] lg:text-8xl mi- font-bold text-center -mt-24 uppercase">Llevamos tu <br> música a un <br> <span class="bg-gradient-to-b from-primary-100 to-primary-300 text-transparent bg-clip-text">nuevo nivel</span></h1>
 
 			</section>
 		</div>
 
 		<section id="servicios" class="bg-neutral-900">
 			<div class="container mx-auto px-4 lg:px-8 py-32">
-				<h2 class="font-bold text-neutral-400 text-7xl text-center">Servicios</h2>
+				<h2 class="font-bold text-neutral-400 text-6xl lg:text-7xl text-center">Servicios</h2>
 
 				<div class="grid lg:grid-cols-2 gap-8 mt-16">
 
@@ -80,17 +80,18 @@ import Nav from '../components/Nav.astro';
 
 		<section id="trabajos">
 			<div class="container mx-auto px-4 lg:px-8 py-32">
-				<h2 class="font-bold text-neutral-200 text-7xl text-center">Nuestros Trabajos</h2>
+				<h2 class="font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Nuestros Trabajos</h2>
 
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
 
-					<div class="select-none rounded-2xl bg-lime-300 p-8">
+					<div class="select-none rounded-2xl bg-secondary-300 p-8">
 						<div>
 							<h3 class="text-4xl font-bold lg:text-6xl text-black/80">DAFT PUNK</h3>
-							<p class="text-zinc-700">Basicamente les hicimos todo.</p>
+							<p class="text-neutral-700 mt-4 text-sm lg:text-base">Basicamente les hicimos todo.</p>
 						</div>
 						<div class="mt-4 grid gap-4">
 							<iframe
+								title="Spotify - Daft Punk - Harder, Better, Faster, Stronger"
 								src="https://open.spotify.com/embed/track/5W3cjX2J3tjhG8zb6u0qHn?utm_source=generator&theme=0"
 								class="rounded-xl"
 								width="100%"
@@ -101,6 +102,7 @@ import Nav from '../components/Nav.astro';
 								loading="lazy"
 							></iframe>
 							<iframe
+								title="Spotify - Daft Punk - One More Time"
 								src="https://open.spotify.com/embed/track/0DiWol3AO6WpXZgp0goxAV?utm_source=generator"
 								class="rounded-xl"
 								width="100%"
@@ -113,15 +115,16 @@ import Nav from '../components/Nav.astro';
 						</div>
 					</div>
 
-					<div class="select-none rounded-2xl p-8 bg-blue-300">
+					<div class="select-none rounded-2xl p-8 bg-secondary-300">
 						<div>
 							<h3 class="text-4xl font-bold lg:text-6xl text-black/80">QUEEN</h3>
-							<p class="text-zinc-700">
+							<p class="text-neutral-700 mt-4 text-sm lg:text-base">
 								Basicamente también les hicimos todo.
 							</p>
 						</div>
 						<div class="mt-4">
 							<iframe
+								loading="lazy"
 								class="aspect-video w-full rounded-xl"
 								width="560"
 								height="315"
