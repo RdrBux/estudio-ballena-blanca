@@ -1,74 +1,79 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
+import WhatsApp from '../components/WhatsApp.astro';
 ---
 
 <Layout title="Estudio Ballena Blanca | Mezclas y masterización ONLINE">
 	<main class="">
 		<div class="h-screen flex flex-col">
 			<Nav />
+			<WhatsApp />
 			<section class="relative grow grid place-content-center container mx-auto px-4 lg:px-8">
-				<!-- <div class="blur-xl absolute -z-10 top-12 left-1/2 h-[180px] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div>
-				<div class="absolute -z-10 top-10 left-1/2 h-[180px] rounded-[32px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div> -->
+				<div class="blur-3xl absolute -z-10 top-12 left-1/2 h-[180px] rounded-[24px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div>
+				<div class="absolute opacity-50 -z-10 top-10 left-1/2 h-[180px] rounded-[24
+				px] w-10/12 -translate-x-1/2 bg-[url('./bg-hero.jpg')] bg-[size:100%] bg-center bg-no-repeat"></div>
 
-				<h1 class="text-[12vw] leading-[110%] lg:text-8xl mi- font-bold text-center -mt-24 uppercase">Llevamos tu <br> música a un <br> <span class="bg-gradient-to-b from-primary-100 to-primary-300 text-transparent bg-clip-text">nuevo nivel</span></h1>
+				<h1 class="text-[12vw] leading-[110%] lg:text-8xl mi- font-bold text-center -mt-24 uppercase">Llevamos tu <br> música a un <br> <span class="bg-gradient-to-b from-primary-200 to-primary-300 text-transparent bg-clip-text">nuevo nivel</span></h1>
 
 			</section>
 		</div>
 
 		<section id="servicios" class="bg-neutral-900">
-			<div class="container mx-auto px-4 lg:px-8 py-32">
-				<h2 class="font-bold text-neutral-400 text-6xl lg:text-7xl text-center">Servicios</h2>
+			<div class="container mx-auto px-4 lg:px-8 py-32 flex flex-col items-center">
+				<h2 class="font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Servicios</h2>
+
+				<p class="text-neutral-400 mt-4 px-4 text-sm lg:text-base md:text-center max-w-3xl">Ofrecemos servicios profesionales de mezcla de audio, masterización y producción musical. Nos enfocamos en transformar tus composiciones en piezas de alta calidad, cumpliendo con los estándares más altos de la industria musical.</p>
 
 				<div class="grid lg:grid-cols-2 gap-8 mt-16">
 
-					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-8">
+					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-6">
 						<div class="flex items-center gap-4">
 							<div class="w-10 aspect-square rounded-xl grid place-content-center text-primary-200 bg-primary-200/10">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
 								</svg>
 							</div>
-							<h3 class="font-semibold text-2xl text-neutral-100">Mezcla de audio</h3>
+							<h3 class="font-semibold text-2xl text-neutral-200">Mezcla de audio</h3>
 						</div>
 
 						<p class="text-neutral-400 mt-4 text-sm lg:text-base">Envía las pistas que hayas grabado en casa o en un estudio, y nosotros nos encargaremos de aplicar todos los procesos necesarios para que suenen al nivel competitivo del estándar de la industria. Esta etapa es altamente artística, es por eso muy importante mantener un intercambio constante con los artistas para asegurarnos de que tu canción llegue a donde quieres que esté.</p>
 					</div>
 
-					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-8">
+					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-6">
 						<div class="flex items-center gap-4">
 							<div class="w-10 aspect-square rounded-xl grid place-content-center text-primary-200 bg-primary-200/10">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
 								</svg>
 							</div>
-							<h3 class="font-semibold text-2xl text-neutral-100">Mastering</h3>
+							<h3 class="font-semibold text-2xl text-neutral-200">Mastering</h3>
 						</div>
 
 						<p class="text-neutral-400 mt-4 text-sm lg:text-base">Después de completar una correcta mezcla, es importante asegurarse de que el audio de la canción esté en los niveles competitivos de la industria musical. Equilibrar y optimizar el audio para garantizar su compatibilidad con todos los sistemas y formatos de reproducción, asegurando una calidad impecable en cada plataforma.</p>
 					</div>
 
-					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-8">
+					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-6">
 						<div class="flex items-center gap-4">
 							<div class="w-10 aspect-square rounded-xl grid place-content-center text-primary-200 bg-primary-200/10">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
 								</svg>
 							</div>
-							<h3 class="font-semibold text-2xl text-neutral-100">Producción musical</h3>
+							<h3 class="font-semibold text-2xl text-neutral-200">Producción musical</h3>
 						</div>
 
 						<p class="text-neutral-400 mt-4 text-sm lg:text-base">Puedes confiar en nosotros para todos los procesos de preproducción. Ya sea que tengas una idea o una pieza sonora inicial, trabajamos en las partes, arreglos y armonización, así como en el diseño sonoro, para poder empezar la etapa de grabación, mezcla y masterización con toda seguridad y fluidez. Te acompañamos desde el concepto hasta la finalización del proyecto, asegurándonos de que tu visión se materialice plenamente.</p>
 					</div>
 
-					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-8">
+					<div class="bg-[rgb(33,33,33)] border border-[rgb(40,40,40)] shadow rounded-2xl p-6">
 						<div class="flex items-center gap-4">
 							<div class="w-10 aspect-square rounded-xl grid place-content-center text-primary-200 bg-primary-200/10">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
 								</svg>
 							</div>
-							<h3 class="font-semibold text-2xl text-neutral-100">Catálogo de músicos de sesión</h3>
+							<h3 class="font-semibold text-2xl text-neutral-200">Catálogo de músicos de sesión</h3>
 						</div>
 
 						<p class="text-neutral-400 mt-4 text-sm lg:text-base">Si eres músico solista o quieres agregar pistas con instrumentos reales grabados, contamos con una lista de músicos de sesión de primer nivel a tu disposición. Estos profesionales pueden enriquecer tus proyectos con su talento y experiencia, aportando un toque auténtico y profesional a tus grabaciones.</p>
@@ -86,7 +91,7 @@ import Nav from '../components/Nav.astro';
 
 					<div class="select-none rounded-2xl bg-secondary-300 p-8">
 						<div>
-							<h3 class="text-4xl font-bold lg:text-6xl text-black/80">DAFT PUNK</h3>
+							<h3 class="text-4xl font-bold lg:text-6xl text-neutral-950">DAFT PUNK</h3>
 							<p class="text-neutral-700 mt-4 text-sm lg:text-base">Basicamente les hicimos todo.</p>
 						</div>
 						<div class="mt-4 grid gap-4">
@@ -117,7 +122,7 @@ import Nav from '../components/Nav.astro';
 
 					<div class="select-none rounded-2xl p-8 bg-secondary-300">
 						<div>
-							<h3 class="text-4xl font-bold lg:text-6xl text-black/80">QUEEN</h3>
+							<h3 class="text-4xl font-bold lg:text-6xl text-neutral-950">QUEEN</h3>
 							<p class="text-neutral-700 mt-4 text-sm lg:text-base">
 								Basicamente también les hicimos todo.
 							</p>
