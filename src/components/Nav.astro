@@ -41,10 +41,13 @@ import Logo from '../assets/logo.jpeg'
 
 	<script>
 		document.querySelector('.hamburger').addEventListener('click', () => {
-			document.querySelector('.mobile-menu').classList.toggle('closed')
+			document.querySelector('.mobile-menu').classList.toggle('closed');
+			document.querySelector('main').classList.toggle('fixed-height');
+
 		})
 
 		document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => {
 			document.querySelector('.mobile-menu').classList.add('closed')
+			document.querySelector('main').classList.remove('fixed-height')
 		}))
 	</script>
