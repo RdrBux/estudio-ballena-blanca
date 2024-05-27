@@ -13,7 +13,7 @@ import WhatsApp from '../components/WhatsApp.astro';
 				<div class="hero | blur-xl absolute bottom-1/2 left-1/2 h-0 w-10/12 -translate-x-1/2 translate-y-1/2 bg-[url('/bg-hero.jpg')] bg-[size:150%] bg-center bg-no-repeat"></div>
 				<div class="hero | opacity-50 absolute bottom-1/2 left-1/2 h-0 w-10/12 -translate-x-1/2 translate-y-1/2 bg-[url('/bg-hero.jpg')] bg-[size:150%] bg-center bg-no-repeat"></div>
 
-				<h1 class="hero-text | leading-[110%] relative z-10 text-center text-[12vw] font-semibold shadow-2xl lg:text-8xl uppercase">Llevamos tu <br> música a un <br> <span class="bg-gradient-to-b from-primary-200 to-primary-300 text-transparent bg-clip-text">nuevo nivel</span></h1>
+				<h1 class="hero-text | invisible leading-[110%] relative z-10 text-center text-[12vw] font-semibold shadow-2xl lg:text-8xl uppercase">Llevamos tu <br> música a un <br> <span class="bg-gradient-to-b from-primary-200 to-primary-300 text-transparent bg-clip-text">nuevo nivel</span></h1>
 
 			</section>
 		</div>
@@ -22,7 +22,7 @@ import WhatsApp from '../components/WhatsApp.astro';
 			<div class="container mx-auto px-4 lg:px-8 py-32 flex flex-col items-center">
 				<h2 class="font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Servicios</h2>
 
-				<p class="text-neutral-400 mt-4 px-4 text-sm lg:text-base md:text-center max-w-3xl">Ofrecemos servicios profesionales de mezcla de audio, masterización y producción musical. Nos enfocamos en transformar tus composiciones en piezas de alta calidad, cumpliendo con los estándares más altos de la industria musical.</p>
+				<p class="text-neutral-400 mt-8 px-4 text-sm lg:text-base md:text-center max-w-3xl">Ofrecemos servicios profesionales de mezcla de audio, masterización y producción musical. Nos enfocamos en transformar tus composiciones en piezas de alta calidad, cumpliendo con los estándares más altos de la industria musical.</p>
 
 				<div class="grid lg:grid-cols-2 gap-8 mt-16">
 
@@ -173,27 +173,17 @@ import WhatsApp from '../components/WhatsApp.astro';
           '.hero-text',
           {
             y: '75vh',
+						autoAlpha: 0,
           },
           1.5
         )
         .from(
           '.hide',
           {
-            opacity: '0',
+            autoAlpha: 0,
           },
           1.5
         )
-        /* .to(
-          '.hero-text',
-          {
-            scale: 10,
-            scrollTrigger: {
-              scrub: 1,
-              start: -200,
-            },
-          },
-          3
-        ); */
 </script>
 
 <style>
