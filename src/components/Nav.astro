@@ -4,11 +4,10 @@ import Logo from '../assets/logo.jpg'
 
 <nav class="hide | invisible absolute z-40 w-full left-0 top-0 right-0 flex justify-between items-center container mx-auto px-4 lg:px-8 ---py-6 py-3">
 		<a class="flex items-center ---gap-3" href="/">
-			<!-- <div class="w-10 aspect-square rounded-full bg-primary-200"></div> -->
 			<img class="w-16 aspect-square" src={Logo.src} alt="">
 			<div>
-				<div class={`${navigator.userAgent.includes('Instagram') ? "text-[4vw]" : "text-[5vw]"} md:text-xl font-semibold`}>Estudio Ballena Blanca</div>
-				<div class={`${navigator.userAgent.includes('Instagram') ? "text-[2.5vw]" : "text-[3vw]"} uppercase md:text-xs tracking-wider text-primary-100`}>Mezclas y masterización ONLINE</div>
+				<div class="title |  text-[5vw] md:text-xl font-semibold">Estudio Ballena Blanca</div>
+				<div class="subtitle | text-[3vw] uppercase md:text-xs tracking-wider text-primary-100">Mezclas y masterización ONLINE</div>
 			</div>
 		</a>
 
@@ -37,9 +36,20 @@ import Logo from '../assets/logo.jpg'
 		.closed {
 			display: none;
 		}
+
+		.instagram-title {
+			font-size: 4vw;
+		}
 	</style>
 
 	<script>
+		const isInstagram = navigator.userAgent.includes('Instagram');
+
+		if (isInstagram) {
+			const title =document.querySelector('.title')
+			title.classList.add('instagram-title')
+		}
+
 		document.querySelector('.hamburger').addEventListener('click', () => {
 			document.querySelector('.mobile-menu').classList.toggle('closed');
 			document.querySelector('main').classList.toggle('fixed-height');
