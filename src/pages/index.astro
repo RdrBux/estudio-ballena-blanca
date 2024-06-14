@@ -150,10 +150,10 @@ import Footer from '../components/Footer.astro';
 	const isInstagram = navigator.userAgent.includes('Instagram');
 	if (isInstagram) {
 		const heroText =document.querySelector('.hero-text')
-		heroText.classList.add('hero-text')
+		heroText.classList.add('hero-text-insta')
 
 		const sectionTitle = document.querySelectorAll('.section-title')
-		sectionTitle.forEach(title => title.classList.add('section-title'))
+		sectionTitle.forEach(title => title.classList.add('section-title-insta'))
 	}
 
 	let tl = gsap.timeline({
@@ -198,11 +198,11 @@ import Footer from '../components/Footer.astro';
 			height: 100vh;
 		}
 
-	.hero-text {
+	.hero-text-insta {
 		font-size: 10vw;
 	}
 
-	.section-title {
+	.section-title-insta {
 		font-size: 3rem;
 	}
 </style>
