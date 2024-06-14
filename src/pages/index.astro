@@ -21,7 +21,7 @@ import Footer from '../components/Footer.astro';
 
 		<section id="servicios" class="bg-neutral-900">
 			<div class="container mx-auto px-4 lg:px-8 py-32 flex flex-col items-center">
-				<h2 class="font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Servicios</h2>
+				<h2 class="section-title | font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Servicios</h2>
 
 				<p class="text-neutral-400 mt-8 px-4 text-sm lg:text-base md:text-center max-w-3xl">Ofrecemos servicios profesionales de mezcla de audio, masterización y producción musical. Nos enfocamos en transformar tus composiciones en piezas de alta calidad, cumpliendo con los estándares más altos de la industria musical.</p>
 
@@ -83,7 +83,7 @@ import Footer from '../components/Footer.astro';
 
 		<section id="trabajos">
 			<div class="container mx-auto px-4 lg:px-8 py-32">
-				<h2 class="font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Nuestros Trabajos</h2>
+				<h2 class="section-title | font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Nuestros Trabajos</h2>
 
 				<div class="flex flex-col max-w-2xl mx-auto gap-16 mt-16">
 
@@ -101,7 +101,7 @@ import Footer from '../components/Footer.astro';
 			<div class="container mx-auto px-4 lg:px-8">
 				<section class="py-32 flex flex-col items-center" id="contacto">
 
-					<h2 class="font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Contacto</h2>
+					<h2 class="section-title | font-bold text-neutral-200 text-6xl lg:text-7xl text-center">Contacto</h2>
 					<p class="text-neutral-400 mt-8 px-4 text-sm lg:text-base md:text-center max-w-xl">Para cualquier tipo de consulta puede contactarse con nosotros por los siguientes medios:</p>
 
 					<div class="mt-12 flex flex-col gap-8 items-center">
@@ -151,6 +151,9 @@ import Footer from '../components/Footer.astro';
 	if (isInstagram) {
 		const heroText =document.querySelector('.hero-text')
 		heroText.classList.add('hero-text')
+
+		const sectionTitle = document.querySelectorAll('.section-title')
+		sectionTitle.forEach(title => title.classList.add('section-title'))
 	}
 
 	let tl = gsap.timeline({
@@ -197,5 +200,9 @@ import Footer from '../components/Footer.astro';
 
 	.hero-text {
 		font-size: 10vw;
+	}
+
+	.section-title {
+		font-size: 3rem;
 	}
 </style>
