@@ -40,6 +40,10 @@ import Logo from '../assets/logo.jpg'
 		.instagram-title {
 			font-size: 4vw;
 		}
+
+		.instagram-subtitle {
+			font-size: 2.5vw;
+		}
 	</style>
 
 	<script>
@@ -48,6 +52,9 @@ import Logo from '../assets/logo.jpg'
 		if (isInstagram) {
 			const title =document.querySelector('.title')
 			title.classList.add('instagram-title')
+
+			const subtitle =document.querySelector('.subtitle')
+			subtitle.classList.add('instagram-subtitle')
 		}
 
 		document.querySelector('.hamburger').addEventListener('click', () => {
